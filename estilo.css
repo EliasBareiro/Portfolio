@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Mono&family=Offside&display=swap');
+
+body{
+    background-color: bisque;
+    font-family: "Offside", sans-serif;
+    font-style: normal;
+    margin: 0;
+}
+h1, h2, h3{
+    font-family: "Nova Mono", monospace;
+    font-style: normal;
+}
+h1{
+    color: darkorange;
+}
+h2{
+    color: darkred;
+}
+main{
+    background-image: url(img/Jewel.png) ;
+    /*opacity: 0.1;*/
+    background-size: 5%;
+    background-repeat: repeat-x repeat-y;
+    background-attachment: fixed;
+    margin: 0% 3.5%;
+    width: 1000px;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 0 0 10px 0;
+    border-radius: 25px;
+}
+
+/* ----------------------------------------  NAV BAR  ---------------------------------------- */
+nav{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0 1em 0 0;
+    overflow: hidden;
+    background-color: #444;
+}nav ul li{
+    float: left;
+    width: 15%;
+}nav ul li a {
+    display: block;
+    color: aliceblue;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 16px;
+}nav ul li a:hover {
+  background-color: #111111;
+}
+/*header{
+    background-color: rgb(0, 0, 0, 0.5);
+}*/
+header, footer{
+    text-align: center;
+}footer{
+    padding: 50px 5% 50px 5%;
+    margin-top: 10px;
+    background-color: black;
+    color: aliceblue;
+    /*position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;*/
+}
+section{
+    display: flex;
+    flex-direction: column;
+}section p{
+    text-align: justify;
+}
+/* ---------------------------------------- PERSONALIZADO ---------------------------------------- */
+.Inicio{
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    margin-bottom: 10rem;
+    margin-top: 5rem;
+}.Inicio img{
+    border-radius: 50%;
+}
+.Segunda_plantilla, .Trabajos_blender{
+    padding: 0 50px;
+    margin-bottom: 10rem;
+    margin-top: 15rem;
+}
+.Trabajos_blender img, video{
+    opacity: 0.8;
+    border-radius: 5px;
+}.Trabajos_blender img:hover, video:hover{
+    opacity: 1;
+}
+/* ---------------------------------------- RESPONSIVE ---------------------------------------- */
+@media screen and (max-width: 750px){
+    .Inicio, .Segunda_plantilla, .Trabajos_blender{
+        padding: 0;
+        flex-direction: column;
+    }.Inicio img{
+        display: none;
+    }
+    nav{
+        display: none;
+    }
+    .Trabajos_blender{
+        display: flex;
+    }
+
+}
